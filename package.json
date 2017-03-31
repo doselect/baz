@@ -1,0 +1,8 @@
+{
+  "name": "baz",
+  "version": "0.1.2",
+  "description": "Generate random names",
+  "dependencies": {
+    "case-converter": "^1.0.1"
+  }
+}
