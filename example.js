@@ -1,11 +1,10 @@
-const baz = require('./baz.js')
-
-exports.baz = function (req, res) {
+exports.baz = function baz (req, res) {
   let wordCase = req.param('case')
+  let genWord = require('./baz.js')(wordCase)
   res.writeHead(200, {"Content-Type": "application/json"})
   res.end(JSON.stringify(
     {
-      "var": wordCase
+      "var": genWord
     }
   ))
 }
