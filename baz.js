@@ -24,7 +24,7 @@ module.exports = (wordCase) => {
     retWord = caseConverter.snake(genWord)
     break
   case 'pascal':
-    retWord = caseConverter/pascal(genWord)
+    retWord = caseConverter.pascal(genWord)
     break
   }
 
